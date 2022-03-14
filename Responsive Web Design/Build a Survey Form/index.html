@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form | FreeCodeCamp</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class='container' id="main">
+        <section id="survey-form-title" title="Survey form Heading">
+            <h1 id="title">Survey Form | Free Code Camp</h1>
+            <p id="description">This survey will help us to enhance the content on website.</p>
+        </section>
+        <section id="survey-form-content" title="Survey form Content">
+            <form id="survey-form">
+                <label id="name-label" for="name">Name: * </label>
+                <input type="text" id="name" placeholder="Type your name" required>
+                
+                <label id="email-label" for="email">E-mail: *</label>
+                <input type="email" id="email" placeholder="Type your e-mail" required>
+                
+                <label id="number-label" for="number">Age: *</label>
+                <input type="number" id="number" placeholder="Type your age" min="12" max="99" required>
+
+                <label for="dropdown">Which category best describe your profile?</label>
+                <select id="dropdown">
+                    <option value="1">Student</option>
+                    <option value="1">Professional</option>
+                    <option value="1">Entrepreneur</option>
+                </select>
+                <hr>
+                <fieldset>
+                    <legend>Which frequency do you access FreeCodeCamp ?</legend>
+                    <label>
+                        <input type="radio" name="access-frequency" value="0">
+                        <span>Everyday</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="access-frequency" value="1">
+                        <span>Once a week</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="access-frequency" value="2">
+                        <span>Once a month</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="access-frequency" value="3">
+                        <span>Never access</span>
+                    </label>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend>What contents do you feel more interested ?</legend>
+                    <label>
+                        <input type="checkbox" name="Content" value="0">
+                        <span>Front-End Concepts</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Content" value="1">
+                        <span>Javascript Tools</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Content" value="2">
+                        <span>API and Microservices</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Content" value="3">
+                        <span>QA, Security and Testing</span>
+                    </label>
+                </fieldset>
+                <hr>
+                <label for="textarea">If you want to help us with another information, please type bellow!</label>
+                <textarea id="textarea"></textarea>
+
+                <button id="submit" type="submit">Send Survey</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
